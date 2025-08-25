@@ -7,8 +7,6 @@ urlpatterns = [
     path('verify/', VerifyCodeView.as_view(), name='verify'),
     path('profile/', ProfileView.as_view(), name='profile'),
     path('upload-image/', UploadImageView.as_view(), name='upload-image'),
-
-    # JWT
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
